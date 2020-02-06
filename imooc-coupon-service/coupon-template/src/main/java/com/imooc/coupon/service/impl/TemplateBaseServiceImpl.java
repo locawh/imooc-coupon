@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 public class TemplateBaseServiceImpl implements ITemplateBaseService {
 
     /**
-     * 注入CouponTemplateDao
+     * 注入CouponTemplate Dao
      */
     private final CouponTemplateDao templateDao;
 

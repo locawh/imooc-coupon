@@ -39,7 +39,6 @@ public class BuildTemplateServiceImpl implements IBuildTemplateService {
 
     /**
      * <h2>创建优惠券模板</h2>
-     *
      * @param: request {@link TemplateRequest} 模板信息请求对象
      * @return: {@link CouponTemplate} 优惠券模板实体
      */
