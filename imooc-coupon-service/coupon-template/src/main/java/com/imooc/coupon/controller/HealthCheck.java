@@ -77,13 +77,7 @@ public class HealthCheck {
         // 大约需要等待两分钟时间才能获取到注册信息
         List<ServiceInstance> instances = client.getInstances(registration.getServiceId());
         List<Map<String, Object>> result = new ArrayList<>(instances.size());
-        /*HashMap<String, Object> map = new HashMap<>();
-        for (ServiceInstance i : instances) {
-            map.put("serviceId", i.getServiceId());
-            map.put("instanceId", i.getInstanceId());
-            map.put("port", i.getPort());
-            result.add(map);
-        }*/
+
         instances.forEach(i -> {
             HashMap<String, Object> info = new HashMap<>();
             info.put("serviceId", i.getServiceId());
