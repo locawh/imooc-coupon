@@ -8,6 +8,8 @@ spring:
     name: eureka-client-coupon-template
   jpa:
     show-sql: true
+    #配置 hibernate.dialect
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: none
     properties:
@@ -16,11 +18,11 @@ spring:
     open-in-view: false
   datasource:
     # 数据源
-    url: jdbc:mysql://127.0.0.1:3306/imooc_coupon_data?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/imooc_coupon_data?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
     username: root
     password: 123456
-    type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
     # 连接池
     hikari:
       maximum-pool-size: 8
