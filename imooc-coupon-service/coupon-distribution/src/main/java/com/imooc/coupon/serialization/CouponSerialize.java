@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 
 /**
  * @author wangheng
- * description
+ * description 优惠券实体序列化器
  * date 2020-02-08 02:31
  * version 1.0
  */

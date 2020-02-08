@@ -1,8 +1,10 @@
 package com.imooc.coupon.constant;
 
 /**
- * <h1>常用常量定义</h1>
- * Created by Qinyi.
+ * @author wangheng
+ * description 常用常量定义
+ * date 2020-02-08 02:10
+ * version 1.0
  */
 public class Constant {
 

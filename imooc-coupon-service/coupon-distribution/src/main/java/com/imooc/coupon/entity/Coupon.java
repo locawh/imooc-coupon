@@ -16,7 +16,7 @@ import java.util.Date;
 
 /**
  * @author wangheng
- * description
+ * description 优惠券(用户领取的优惠券记录)实体表
  * date 2020-02-08 02:10
  * version 1.0
  */
