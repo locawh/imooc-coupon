@@ -8,6 +8,8 @@ spring:
     name: eureka-client-coupon-distribution
   jpa:
     show-sql: true
+    #配置 hibernate.dialect
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: none
     properties:

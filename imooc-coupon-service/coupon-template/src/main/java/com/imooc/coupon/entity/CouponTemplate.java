@@ -108,7 +108,7 @@ public class CouponTemplate implements Serializable {
                           Integer productLine, Integer count, Long userId,
                           Integer target, TemplateRule rule) {
 
-        this.available = false;
+        this.available = true;
         this.expired = false;
         this.name = name;
         this.logo = logo;

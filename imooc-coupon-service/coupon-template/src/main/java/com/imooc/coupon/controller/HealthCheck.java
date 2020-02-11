@@ -33,6 +33,7 @@ public class HealthCheck {
      * 注入服务注册接口,提供了获取服务id的方法
      */
     private final Registration registration;
+
     @Autowired
     public HealthCheck(DiscoveryClient client, Registration registration) {
         this.client = client;
@@ -55,6 +56,7 @@ public class HealthCheck {
     /**
      * 异常测试接口
      * 127.0.0.1:7001/coupon-template/exception
+     * 127.0.0.1:9000/imooc/coupon-template/exception
      *
      * @param
      * @return
@@ -78,8 +80,8 @@ public class HealthCheck {
         List<ServiceInstance> instances = client.getInstances(registration.getServiceId());
         List<Map<String, Object>> result = new ArrayList<>(instances.size());
 
+        HashMap<String, Object> info = new HashMap<>();
         instances.forEach(i -> {
-            HashMap<String, Object> info = new HashMap<>();
             info.put("serviceId", i.getServiceId());
             info.put("instanceId", i.getInstanceId());
             info.put("port", i.getPort());
@@ -87,7 +89,6 @@ public class HealthCheck {
         });
         return result;
     }
-
 
 
 }
